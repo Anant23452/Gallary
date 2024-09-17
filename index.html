@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary curson</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+            gap: 4px;
+            padding: 16px;
+            overflow: hidden;
+        }
+        .grid-item {
+            /* background-color: #3498db; */
+            border-radius: 4px;
+            overflow: hidden;
+            grid-column: var(--c);
+            grid-row: var(--r);
+        }
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .em{
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body >
+    <div class="w-full bg-zinc-900 ">
+    <div class="grid-container ">
+        <div class="elem grid-item" style="--r: 1; --c: 1;"><img src="https://picsum.photos/200" alt="Random image 1"></div>
+        <div class="elem grid-item" style="--r: 1; --c: 5;"><img src="https://picsum.photos/201" alt="Random image 2"></div>
+        <div class="elem grid-item" style="--r: 2; --c: 3;"><img src="https://picsum.photos/202" alt="Random image 3"></div>
+        <div class="elem grid-item" style="--r: 2; --c: 7;"><img src="https://picsum.photos/203" alt="Random image 4"></div>
+        <div class="elem grid-item" style="--r: 3; --c: 2;"><img src="https://picsum.photos/204" alt="Random image 5"></div>
+        <div class="elem grid-item" style="--r: 3; --c: 6;"><img src="https://picsum.photos/205" alt="Random image 6"></div>
+        <div class="elem grid-item" style="--r: 4; --c: 4;"><img src="https://picsum.photos/206" alt="Random image 7"></div>
+        <div class="elem grid-item" style="--r: 4; --c: 8;"><img src="https://picsum.photos/207" alt="Random image 8"></div>
+        <div class="elem grid-item" style="--r: 5; --c: 1;"><img src="https://picsum.photos/208" alt="Random image 9"></div>
+        <div class="elem grid-item" style="--r: 5; --c: 5;"><img src="https://picsum.photos/209" alt="Random image 10"></div>
+        <div class="elem grid-item" style="--r: 6; --c: 3;"><img src="https://picsum.photos/210" alt="Random image 11"></div>
+        <div class="elem grid-item" style="--r: 6; --c: 7;"><img src="https://picsum.photos/211" alt="Random image 12"></div>
+        <div class="elem grid-item" style="--r: 7; --c: 2;"><img src="https://picsum.photos/212" alt="Random image 13"></div>
+        <div class="elem grid-item" style="--r: 7; --c: 6;"><img src="https://picsum.photos/213" alt="Random image 14"></div>
+        <div class="elem grid-item" style="--r: 8; --c: 4;"><img src="https://picsum.photos/214" alt="Random image 15"></div>
+        <div class="elem grid-item" style="--r: 8; --c: 8;"><img src="https://picsum.photos/215" alt="Random image 16"></div>
+        <div class="elem grid-item" style="--r: 9; --c: 1;"><img src="https://picsum.photos/216" alt="Random image 17"></div>
+        <div class="elem grid-item" style="--r: 9; --c: 5;"><img src="https://picsum.photos/217" alt="Random image 18"></div>
+        <div class="elem grid-item" style="--r: 10; --c: 3;"><img src="https://picsum.photos/218" alt="Random image 19"></div>
+        <div class="elem grid-item" style="--r: 10; --c: 7;"><img src="https://picsum.photos/219" alt="Random image 20"></div>
+    </div>
+    <div class=" em fixed top-0 left-0 w-full h-full  flex flex-col items-center justify-center  text-white bg-yellow-500-opacity-50">
+        <h1 class="text-6xl font-bold mb-4">Welcome to Our Gallery</h1>
+        <h2 class="text-4xl">Explore Amazing Images</h2>
+    </div>
+    <!-- <div class="w-full h-screen flex  items-center justify-center mx-45 my-8 py- text-center bg-yellow-500">
+        <p class="text-white text-3xl w-3/4 text-4xl leading-12">
+            Welcome to our stunning image gallery! Here you'll find a diverse collection of captivating photographs from various artists around the world. Each image tells a unique story and offers a glimpse into different perspectives. Take your time to explore and enjoy the visual journey through our carefully curated selection.
+        </p>
+    </div> -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+<script src="script.js"></script>
+</body>
+</html>
